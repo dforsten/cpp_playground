@@ -1,5 +1,14 @@
 import QtQuick 2.0
 
-Text {
-    text: "Hello World"
+Loader {
+    id: _loader
+
+    function reload() {
+        source = "";
+        $QmlEngine.clearCache();
+        source = "Circle.qml";
+    }
+
+    anchors.centerIn: parent
+    source: "text.qml"
 }
