@@ -15,6 +15,7 @@ endif()
 if(CPP_STARTER_USE_QT)
   message("Using Qt")
   add_subdirectory(qt)
+  add_subdirectory(qml)
 endif()
 
 # fltk test
